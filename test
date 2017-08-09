@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+	<style>
+		img{
+			margin: 200px;
+			transition:1s;
+		}
+	</style>
+<body>
+	<img src="wx.png" alt="" id="imgid">
+	<script>
+		// 11111111111111
+		// 
+		 function show(){
+			var imgid=document.getElementById("imgid");
+			if(imgid.style.visibility == "visible")
+			 	imgid.style.visibility = "hidden";
+			else{
+			 	imgid.style.visibility = "visible";
+			}
+			setTimeout(show,1000);	
+		}
+		show();
+
+		// 2222222222222
+		// function show(){
+		// 	var imgid=document.getElementById("imgid");
+		// 	if(imgid.style.display == "block"){
+		// 		imgid.style.display = "none"
+		// 	}else{
+		// 		imgid.style.display = "block";
+		// 	}
+		// 	setTimeout(show,1000);
+		// }
+		// show();
+		// 33333333333333
+		function show(){
+			var imgid=document.getElementById("imgid");
+			(imgid.style.display == "block")?"none":imgid.style.display = "block";
+		}
+		
+
+
+	</script>
+</body>
+</html>
