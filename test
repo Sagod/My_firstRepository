@@ -9,6 +9,7 @@
 			margin: 200px;
 			transition:1s;
 		}
+		
 	</style>
 <body>
 	<img src="wx.png" alt="" id="imgid">
